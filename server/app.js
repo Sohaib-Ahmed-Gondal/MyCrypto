@@ -20,3 +20,8 @@ app.use('/api/trade', tradeRoutes);
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+// added dotenv to load environment variables
+require('dotenv').config({ path: './.env' }); // Top of file
+console.log('DB connected to:', process.env.DATABASE_URL?.split('@')[1] || 'Not loaded!');

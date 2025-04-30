@@ -3,3 +3,6 @@ AppData/
 .vscode/
 *.lst
 *.jtx
+# .gitignore
+server/.env
+*.env.local
